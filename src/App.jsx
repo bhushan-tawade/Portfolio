@@ -7,6 +7,7 @@ import HamburgerMenu from "./Components/HamburgerMenu";
 import { AnimatePresence } from "framer-motion";
 import Collabrate from "./Pages/Collabrate";
 import SmoothCursor from "./utils/SmoothCursor";
+import IntroAnimation from "./utils/IntroAnimation";
 const App = () => {
   const [isOpen, setOpen] = useState(false);
   const [toggleColor, setToggleColor] = useState(false);
@@ -14,6 +15,7 @@ const App = () => {
 
   return (
     <Router>
+      <IntroAnimation/>
       <Navbar
         isOpen={isOpen}
         setOpen={setOpen}

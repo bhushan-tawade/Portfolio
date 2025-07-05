@@ -73,16 +73,16 @@ FlowingMenu.Item = function MenuItem({ link, start, bold, end, image }) {
       className="flex-1 relative overflow-hidden text-center shadow-[0_-1px_0_0_#9f9fa9] bg-z "
       ref={itemRef}
     >
-      <a
-        className="flex items-center h-full  px-20 relative cursor-pointer no-underline font-semibold text-[9vh] max-[1025px]:text-[2.5rem] max-[1441px]:text-[8vh] max-[769px]:text-[1.5rem] max-[426px]:text-[1rem] max-[769px]:px-10 hover:text-[#060010]"
-        href={link}
+      <p
+        className="flex items-center h-full  px-20 relative no-underline font-semibold text-[9vh] max-[1025px]:text-[2.5rem] max-[1441px]:text-[8vh] max-[769px]:text-[1.5rem] max-[426px]:text-[1rem] max-[769px]:px-10 hover:text-[#060010]"
+        
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
         {start && <span className="text-gray-400 ">{start}&nbsp;</span>}
         <span className="font-bold text-black">{bold}</span>
         {end && <span className="text-gray-400">&nbsp;{end}</span>}
-      </a>
+      </p>
 
       <div
         className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none bg-black translate-y-[101%]"

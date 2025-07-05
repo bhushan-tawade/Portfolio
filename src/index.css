@@ -542,3 +542,20 @@ backdrop-filter: blur(8.3px);
 
 }
 
+
+
+@keyframes splitTop {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-100%); }
+}
+@keyframes splitBottom {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(100%); }
+}
+
+.animate-split-top {
+  animation: splitTop 1s ease forwards;
+}
+.animate-split-bottom {
+  animation: splitBottom 1s ease forwards;
+}

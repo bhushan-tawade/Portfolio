@@ -7,7 +7,7 @@ import Marquee from "react-fast-marquee";
 
 import { motion, useScroll, useTransform } from "framer-motion";
 
-const Hero = ({isOpen, setOpen }) => {
+const Hero = ({ isOpen, setOpen }) => {
   const icons = [
     "CSS",
     "Express",
@@ -48,7 +48,7 @@ const Hero = ({isOpen, setOpen }) => {
           <div className="absolute top-0 w-full">
             <BubbleCanvas />
           </div>
-          
+
           <SmoothCursor />
 
           {/* Scroll-based animated text */}
@@ -73,14 +73,13 @@ const Hero = ({isOpen, setOpen }) => {
             />
           </motion.div>
         </div>
-
-        <div className="absolute bottom-10 w-[110%] h-[22vh] bg-white border-0 rounded-[100%] z-[-1]">
-          <div className="w-full flex items-center justify-center mt-15">
-            <h1 className="text-black text-lg max-[426px]:text-sm">
-              Bhushan Tawade, Software Developer.
-            </h1>
-          </div>
-        </div>
+        <motion.h1
+          style={{ opacity, y }}
+          className="text-black text-lg max-[426px]:text-sm z-20 relative bottom-4 max-[1025px]:bottom-10"
+        >
+          Bhushan Tawade, Software Developer.
+        </motion.h1>
+        <div className="absolute bottom-10 w-[110%] h-[22vh] bg-white border-0 rounded-[100%] z-[-1] flex items-center justify-center"></div>
       </motion.div>
 
       <div className="relative bottom-6 w-full h-19 flex items-center justify-center mt-3 p-0 opacity-80">

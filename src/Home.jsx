@@ -13,6 +13,7 @@ import SmoothScroll from "./utils/SmoothScroll";
 import HamburgerMenu from "./Components/HamburgerMenu";
 import { AnimatePresence } from "framer-motion";
 import Navbar from "./Components/Navbar";
+import IntroAnimation from "./utils/IntroAnimation";
 
 const Home = ({isOpen, setOpen, setToggleColor}) => {
   
