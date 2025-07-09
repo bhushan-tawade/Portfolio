@@ -29,14 +29,7 @@ const Home = ({isOpen, setOpen, setToggleColor}) => {
       <Hero isOpen={isOpen} setOpen={setOpen} />
       <SmoothCursor />
       <Intro />
-      <ScrollVelocity
-        texts={[
-          "Powered by Coffee & Code • A Pixel-Perfect Perfectionist • ",
-          " Brew. Code. Repeat. • Debugging with a Cup of JavaScript •",
-        ]}
-        velocity={75}
-        className="custom-scroll-text text-5xl max-[426px]:text-2xl"
-      />
+     
       <Skills />
       <Projects />
       <WhoIam />

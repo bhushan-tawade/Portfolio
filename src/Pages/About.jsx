@@ -6,6 +6,8 @@ import { FaInstagram } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { SiMedium } from "react-icons/si";
+import { IoLogoGithub } from "react-icons/io";
+
 import { Link } from "react-router-dom";
 import SmoothCursor from "../utils/SmoothCursor";
 
@@ -13,6 +15,8 @@ const About = ({ setToggleColor }) => {
   useEffect(() => {
     setToggleColor(false);
   }, []);
+
+  const links = [ "https://github.com/bhushan-tawade", "https://www.linkedin.com/in/bhushan-tawade/", "https://x.com/Bhushan_t2504", "https://www.instagram.com/bhushan_t.25/", "https://medium.com/@tawadebhushan25" ];
 
   return (
     <>
@@ -118,13 +122,13 @@ const About = ({ setToggleColor }) => {
           max-[1025px]:flex-col-reverse "
         >
           <div className="h-full w-[10%] max-[1025px]:w-full flex flex-col max-[1025px]:flex-row justify-around items-center py-10">
-            {[FaLinkedinIn, FaXTwitter, FaInstagram, SiMedium].map(
+            {[IoLogoGithub, FaLinkedinIn, FaXTwitter, FaInstagram, SiMedium].map(
               (Icon, idx) => (
                 <div
                   key={idx}
                   className="hover:scale-[1.5] hover:-translate-y-2 transition-all duration-300 ease-in-out"
                 >
-                  <a href="#">
+                  <a href={links[idx]} target="_blank" rel="noopener noreferrer">
                     <Icon size={50} />
                   </a>
                 </div>

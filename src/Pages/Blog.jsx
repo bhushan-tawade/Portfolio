@@ -44,14 +44,14 @@ const Blog = () => {
       <div className="w-[55%] h-full max-[426px]:w-full max-[769px]:w-full max-[1280px]:w-full">
         <div className="w-full h-21 flex items-center justify-between px-5 py-5">
           <div className="flex items-end gap-2">
-            <div className="w-12 h-12 max-[426px]:w-9 max-[426px]:h-9 bg-[url(/blank-profile.png)] p-0 bg-cover bg-center rounded-full"
-            
-            ></div>
+            <div className="w-12 h-12 max-[426px]:w-9 max-[426px]:h-9 bg-[url(/blank-profile.png)] p-0 bg-cover bg-center rounded-full"></div>
             <div className="text-white leading-none">
               <h1 className="text-xl max-[426px]:text-sm">Bhushan</h1>
-              <p className="text-sm max-[426px]:text-[10px] text-zinc-500">
-                @tawadebhushan25
-              </p>
+              <a href="https://medium.com/@tawadebhushan25" target="_blank">
+                <p className="text-sm max-[426px]:text-[10px] text-zinc-500">
+                  @tawadebhushan25
+                </p>
+              </a>
             </div>
           </div>
           <a

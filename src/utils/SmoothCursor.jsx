@@ -97,6 +97,7 @@ export default function SmoothCursor() {
         zIndex: 9999,
         willChange: "transform",
       }}
+      className="max-[426px]:hidden"
     >
       <DefaultCursorSVG />
     </motion.div>

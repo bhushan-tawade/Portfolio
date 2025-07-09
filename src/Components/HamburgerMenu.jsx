@@ -6,6 +6,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { SiMedium } from "react-icons/si";
 import { Link } from "react-router-dom";
+import { IoLogoGithub } from "react-icons/io";
 
 const menuVariants = {
   hidden: {
@@ -33,7 +34,7 @@ const menuVariants = {
 const HamburgerMenu = ({ setOpen, toggleColor, setToggleColor }) => {
   return (
     <motion.div
-      className="fixed top-0 left-0 w-full h-screen glass z-50 overflow-hidden "
+      className="fixed top-0 left-0 w-full h-screen glass z-[9999] overflow-hidden "
       variants={menuVariants}
       initial="hidden"
       animate="visible"
@@ -66,6 +67,15 @@ const HamburgerMenu = ({ setOpen, toggleColor, setToggleColor }) => {
         </Link>
       </div>
       <div className="h-[20%] border-t-2 border-white glass1 flex flex-wrap justify-center items-center gap-10 sm:gap-20 md:gap-30 text-white py-6 sm:py-10 text-[2.5rem] sm:text-5xl md:text-6xl">
+        <div className="hover:scale-[1.5] hover:-translate-y-3 sm:hover:-translate-y-5 transition-all duration-300 ease-in-out">
+          <a
+            href="https://github.com/bhushan-tawade"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <IoLogoGithub />
+          </a>
+        </div>
         <div className="hover:scale-[1.5] hover:-translate-y-3 sm:hover:-translate-y-5 transition-all duration-300 ease-in-out">
           <a
             href="https://www.linkedin.com/in/bhushan-tawade/"

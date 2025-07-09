@@ -12,8 +12,14 @@ const Skills = () => {
   return (
     <motion.div
       whileInView={{ opacity: 1 }}
-      className="w-full min-h-[100vh] py-10 px-4 sm:px-6 md:px-12 lg:px-20 bg-black flex flex-col items-center justify-center min-[426px]:sticky top-[-50px]"
+      className="w-full min-h-[100vh] py-10 px-4 sm:px-6 md:px-12 lg:px-20 bg-black flex flex-col items-center justify-center min-[426px]:sticky top-[-10px] max-[769px]:top-[-210px]"
     >
+      <div>
+        <h1 className="text-5xl max-[769px]:text-4xl text-white mb-6">
+          Skills & Technologies
+        </h1>
+        <br />
+      </div>
       <div
         className="
           grid 
