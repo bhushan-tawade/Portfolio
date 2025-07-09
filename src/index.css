@@ -525,7 +525,7 @@ body {
 
 .glass{
 /* From https://css.glass */
-background: rgba(10, 10, 17, 0.75);
+background: rgba(96, 96, 236, 0.75);
 
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(20px);
